@@ -1,0 +1,13 @@
+- insert:
+    - id: draw-router
+      name: dsh-draw-router
+      inject: [tools, webServer]
+      config:
+        sources:
+          # Example: add a draw source (baseUrl + apiKey)
+          # stepfun:
+          #   baseUrl: https://api.stepfun.com/v1
+          #   apiKey: your-stepfun-key
+          # sensenova:
+          #   baseUrl: https://token.sensenova.cn/v1
+          #   apiKey: your-sensenova-key
