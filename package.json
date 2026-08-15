@@ -1,0 +1,87 @@
+{
+  "name": "dsh-draw-router",
+  "version": "0.1.0",
+  "description": "Unified image generation router for DeepSeek Harness (DSH). Auto-discovers image models from any OpenAI-compatible endpoint. Supports SenseNova, StepFun, Agnes, Qwen, Tongyi Wanxiang, Jimeng/Seedream, Hunyuan, GPT Image, Flux, Stable Diffusion, Imagen, and more. | DeepSeek Harness 统一绘图路由器：自动识别任意 OpenAI 兼容端点的绘图模型，支持商汤、阶跃、Agnes、千问、通义万相、即梦、混元、GPT Image、Flux、Stable Diffusion、Imagen 等。",
+  "type": "commonjs",
+  "main": "lib/index.js",
+  "exports": {
+    ".": { "default": "./lib/index.js" },
+    "./client": { "default": "./lib/client.js" },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node --check lib/index.js && node --check lib/client.js && echo 'Syntax OK'",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "draw",
+    "image-generation",
+    "text-to-image",
+    "image-gen",
+    "ai-draw",
+    "sensenova",
+    "stepfun",
+    "agnes",
+    "qwen",
+    "wanxiang",
+    "tongyi",
+    "flux",
+    "imagen",
+    "stable-diffusion",
+    "hunyuan",
+    "tencent",
+    "seedream",
+    "jimeng",
+    "doubao",
+    "bytedance",
+    "gpt-image",
+    "openai",
+    "dall-e",
+    "midjourney",
+    "kling",
+    "kling",
+    "pixart",
+    "cogview",
+    "taiyi",
+    "ideogram",
+    "小哲",
+    "xiaozhe",
+    "xiaozhe7772222"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaozhe7772222/dsh-draw-router.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xiaozhe7772222/dsh-draw-router/issues"
+  },
+  "homepage": "https://github.com/xiaozhe7772222/dsh-draw-router#readme",
+  "license": "MIT",
+  "author": "小哲 (xiaozhe7772222) 🐧",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6"
+  }
+}
