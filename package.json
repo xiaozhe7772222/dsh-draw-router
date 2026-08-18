@@ -1,7 +1,7 @@
 {
   "name": "dsh-draw-router",
-  "version": "0.1.0",
-  "description": "Unified image generation router for DeepSeek Harness (DSH). Auto-discovers image models from any OpenAI-compatible endpoint. Supports SenseNova, StepFun, Agnes, Qwen, Tongyi Wanxiang, Jimeng/Seedream, Hunyuan, GPT Image, Flux, Stable Diffusion, Imagen, and more. | DeepSeek Harness 统一绘图路由器：自动识别任意 OpenAI 兼容端点的绘图模型，支持商汤、阶跃、Agnes、千问、通义万相、即梦、混元、GPT Image、Flux、Stable Diffusion、Imagen 等。",
+  "version": "0.1.1",
+  "description": "Unified image generation router for DeepSeek Harness (DSH). Auto-discovers image models from any OpenAI-compatible endpoint. Supports SenseNova, StepFun, Agnes, Qwen, Tongyi Wanxiang, Jimeng/Seedream, Hunyuan, GPT Image, Flux, Stable Diffusion, Imagen, and more. | DeepSeek Harness 统一绘图路由器：自动识别任意 OpenAI 兼容端点的绘图模型，支持商汤、阶跃〃Agnes、千问、通义万相、即梦、混元、GPT Image、Flux、Stable Diffusion、Imagen 等。",
   "type": "commonjs",
   "main": "lib/index.js",
   "exports": {
