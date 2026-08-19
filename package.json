@@ -17,7 +17,7 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "test": "node --check lib/index.js && node --check lib/client.js && echo 'Syntax OK'",
+    "test": "node --check lib/index.js && node --check lib/client.js && node --test tests/*.test.js",
     "prepublishOnly": "npm test"
   },
   "keywords": [
